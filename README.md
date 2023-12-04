@@ -1,4 +1,4 @@
-# NetFileXfer TLS Programming
+# TLS Programming
 
 This program was a part of my college course assignment to implement a TLS/SSL programming to encrypt file transfer in a tunnel. This program is accompanied by Wireshark to do further investigation when the packets being sent are encrypted. This program also uses open source OpenSSL that came with using Ubuntu. 
 
