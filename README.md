@@ -26,11 +26,11 @@ Next, invoke the server program to start the server with this command:
 * NOTE: Interpreter may vary (e.g. 'py', 'python', 'python2', 'python3', etc.) so type the first part according to your machine.
 
 Second, run the `NetFileXferClient.py` on a separate terminal to let the client connect to the server and send files securely.<br>
-Be sure the port number to match with the server.
+Be sure that the client's port number matches with the server.
 >`python3 NetfileXferClient.py [IP] [port number] [file]`<br>
 > ex: `python3 NetFileXferClient.py localhost 7800 test.txt`
 
-Inside this file, there is `test.txt` and `mountain-lake.jpg`. You are allowed to run these example files add more files to your liking. Doing so will serve a good purpose to let Wireshark capture these encrypted packets.
+Inside this file, there is a `test.txt` and a `mountain-lake.jpg`. You are allowed to run these example files or add more files to your liking. Doing so will serve a good purpose to let Wireshark capture these encrypted packets.
 
 # Installation
 
@@ -45,7 +45,7 @@ If it does exist, in the terminal, type:
 
 This procedure will prompt you to enter some required information for a Distinguished Name. Leaving these fields blank will cause this prompt to fail!
 
-After generating the key.pem and the cert.pem, move them to the inside `NetFileXfer` folder inside the same directory called `server` where the `NetFileXferServer.py` is located.
+After generating the key.pem and the cert.pem, move them to the `NetFileXfer` folder inside the same directory called `server` where the `NetFileXferServer.py` is located.
 
 Doing so will make the two programs run properly. The `NetFileXferServer.py` needs these .pem to implement TLS/SSL encryption security.
 
@@ -69,7 +69,7 @@ Before running wireshark, log out or restart your linux machine!
 Finally, run the program in the terminal to start capturing the NetFileXfer programs:
 > `wireshark`
 
-For this program, you can select "any" when you run Wireshark to capture the packets when running the NetFileXfer programs.
+For this program, you can select "any" when you run Wireshark to capture the packets when running the NetFileXfer programs in the terminal.
 
 ## Programming References
 [SSL implementation in client and server side (asecuritysite)](https://asecuritysite.com/subjects/chapter107)
