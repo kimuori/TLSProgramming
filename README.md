@@ -61,8 +61,8 @@ Select "yes" when prompted to the question.
 Next, type this command below to add yourself to the "wireshark" group:
 
 > `sudo usermod -a -G wireshark {username}`<br>
-> <br> alternatively: `sudo adduser $USER wireshark`
-> <br>example: "sudo usermod -a -G wireshark vboxjem"
+> <br>alternatively: `sudo adduser $USER wireshark`
+> <br>ex: `sudo usermod -a -G wireshark vboxjem`
 
 Before running wireshark, log out or restart your linux machine!
 
