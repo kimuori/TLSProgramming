@@ -17,7 +17,7 @@ After these prior set-ups, the programs can be run in terminal.
 Before running the program, have Wireshark capture these packets using the `any` option.
 
 Open one terminal window. To run the `NetFileXferServer.py` program in terminal, traverse through the directories from the `usr` using the command:
-> `cd TLS\ Programming` > `cd NetFileXfer` > `cd server`
+> `cd NetFileXfer_TLSProgramming` > `cd server`
 
 Next, invoke the server program to start the server with this command:
 > `python3 NetFileXferServer.py [port_number]`<br>
