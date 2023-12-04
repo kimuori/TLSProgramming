@@ -34,7 +34,7 @@ Inside this file, there is a `test.txt` and a `mountain-lake.jpg`. You are allow
 
 # Installation
 
-## OpenSSL Set up (for TLS)
+## OpenSSL set up for creating cert.pem and key.pem
 For this first part of needing a key.pem or cert.pem, OpenSSL must be set up first in order to generate these two.
 
 To verify OpenSSL exists in your Linux, in the terminal, type `openssl version`.
