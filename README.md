@@ -8,7 +8,7 @@ There are two programs to this project: `NetFileXferServer.py` and `NetFileXferC
 
 Before running these files, it is important to refer to the **Installation** instructions on installing Wireshark on Linux to analyze the packets in this project.
 
-In order for the `NetFileXferServer.py` to work, it needs to have cert.pem and key.pem.<br>
+In order for the `NetFileXferServer.py` to work, it needs to have your own cert.pem and key.pem.<br>
 Refer to the installation instructions on how to use OpenSSL to generate these certifications.
 
 After these prior set-ups, the programs can be run in terminal.
