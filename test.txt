@@ -1,0 +1,1 @@
+In this assignment, students will be tasked with developing secure network applications using TLS. They will implement TLS in a simple TCP server-client architecture and a file transfer application and then analyze the security implications of using TLS.
