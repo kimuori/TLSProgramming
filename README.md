@@ -17,18 +17,25 @@ After these prior set-ups, the programs can be run in terminal.
 Before running the program, have Wireshark capture these packets using the `any` option.
 
 Open one terminal window. To run the `NetFileXferServer.py` program in terminal, traverse through the directories from the `usr` using the command:
-> `cd NetFileXfer_TLSProgramming` > `cd server`
+```
+`cd NetFileXfer_TLSProgramming` > `cd server`
+```
 
 Next, invoke the server program to start the server with this command:
-> `python3 NetFileXferServer.py [port_number]`<br>
-> ex: `python3 NetFileXferServer.py 7800`
+```
+`python3 NetFileXferServer.py [port_number]`
+```
+Example: `python3 NetFileXferServer.py 7800`
 
 * NOTE: Interpreter may vary (e.g. 'py', 'python', 'python2', 'python3', etc.) so type the first part according to your machine.
 
 Second, run the `NetFileXferClient.py` on a separate terminal to let the client connect to the server and send files securely.<br>
 Be sure that the client's port number matches with the server.
->`python3 NetfileXferClient.py [IP] [port number] [file]`<br>
-> ex: `python3 NetFileXferClient.py localhost 7800 test.txt`
+
+```
+`python3 NetfileXferClient.py [IP] [port number] [file]`
+```
+Example: `python3 NetFileXferClient.py localhost 7800 test.txt`
 
 Inside this file, there is a `test.txt` and a `mountain-lake.jpg`. You are allowed to run these example files or add more files to your liking. Doing so will serve a good purpose to let Wireshark capture these encrypted packets.
 
@@ -41,7 +48,9 @@ To verify OpenSSL exists in your Linux, in the terminal, type `openssl version`.
 
 If it does exist, in the terminal, type: 
 
->`openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem`
+```
+`openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem`
+```
 
 This procedure will prompt you to enter some required information for a Distinguished Name. Leaving these fields blank will cause this prompt to fail!
 
@@ -52,22 +61,27 @@ Doing so will make the two programs run properly. The `NetFileXferServer.py` nee
 ## Installing Wireshark
 
 Install the Wireshark with this command in terminal:
->`sudo apt-get install wireshark`
+```
+`sudo apt-get install wireshark`
+```
 
 After the line above, type:
-> `sudo dpkg-reconfigure wireshark-common`
+```
+`sudo dpkg-reconfigure wireshark-common`
+```
 
 Select "yes" when prompted to the question.
 Next, type this command below to add yourself to the "wireshark" group:
 
-> `sudo usermod -a -G wireshark {username}`<br>
-> <br>alternatively: `sudo adduser $USER wireshark`
-> <br>ex: `sudo usermod -a -G wireshark vboxjem`
+```
+`sudo usermod -a -G wireshark {username}`
+```
+Alternatively: `sudo adduser $USER wireshark`
+Example: `sudo usermod -a -G wireshark vboxjem`
 
 Before running wireshark, log out or restart your linux machine!
 
-Finally, run the program in the terminal to start capturing the NetFileXfer programs:
-> `wireshark`
+Finally, run the program by typing `wireshark` in the terminal to start capturing the NetFileXfer programs.
 
 For this program, you can select "any" when you run Wireshark to capture the packets when running the NetFileXfer programs in the terminal.
 
