@@ -18,12 +18,13 @@ Before running the program, have Wireshark capture these packets using the `any`
 
 Open one terminal window. To run the `NetFileXferServer.py` program in terminal, traverse through the directories from the `usr` using the command:
 ```
-`cd NetFileXfer_TLSProgramming` > `cd server`
+cd NetFileXfer_TLSProgramming
+cd server
 ```
 
 Next, invoke the server program to start the server with this command:
 ```
-`python3 NetFileXferServer.py [port_number]`
+python3 NetFileXferServer.py [port_number]
 ```
 Example: `python3 NetFileXferServer.py 7800`
 
@@ -33,7 +34,7 @@ Second, run the `NetFileXferClient.py` on a separate terminal to let the client 
 Be sure that the client's port number matches with the server.
 
 ```
-`python3 NetfileXferClient.py [IP] [port number] [file]`
+python3 NetfileXferClient.py [IP] [port number] [file]
 ```
 Example: `python3 NetFileXferClient.py localhost 7800 test.txt`
 
@@ -49,7 +50,7 @@ To verify OpenSSL exists in your Linux, in the terminal, type `openssl version`.
 If it does exist, in the terminal, type: 
 
 ```
-`openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem`
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 ```
 
 This procedure will prompt you to enter some required information for a Distinguished Name. Leaving these fields blank will cause this prompt to fail!
@@ -62,19 +63,19 @@ Doing so will make the two programs run properly. The `NetFileXferServer.py` nee
 
 Install the Wireshark with this command in terminal:
 ```
-`sudo apt-get install wireshark`
+sudo apt-get install wireshark
 ```
 
 After the line above, type:
 ```
-`sudo dpkg-reconfigure wireshark-common`
+sudo dpkg-reconfigure wireshark-common
 ```
 
 Select "yes" when prompted to the question.
 Next, type this command below to add yourself to the "wireshark" group:
 
 ```
-`sudo usermod -a -G wireshark {username}`
+sudo usermod -a -G wireshark {username}
 ```
 Alternatively: `sudo adduser $USER wireshark`
 Example: `sudo usermod -a -G wireshark vboxjem`
